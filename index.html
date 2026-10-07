@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator">
+    <h1>Calculator</h1>
+
+    <div class="display">
+      <p id="history" class="history"></p>
+      <p id="current" class="current" aria-live="polite">0</p>
+    </div>
+
+    <div class="buttons" id="buttons">
+      <button type="button" class="clear span-3" data-type="clear" aria-label="Clear">C</button>
+      <button type="button" class="operator" data-type="operator" data-value="/" aria-label="Divide">&divide;</button>
+
+      <button type="button" data-type="number" data-value="7">7</button>
+      <button type="button" data-type="number" data-value="8">8</button>
+      <button type="button" data-type="number" data-value="9">9</button>
+      <button type="button" class="operator" data-type="operator" data-value="*" aria-label="Multiply">&times;</button>
+
+      <button type="button" data-type="number" data-value="4">4</button>
+      <button type="button" data-type="number" data-value="5">5</button>
+      <button type="button" data-type="number" data-value="6">6</button>
+      <button type="button" class="operator" data-type="operator" data-value="-" aria-label="Subtract">&minus;</button>
+
+      <button type="button" data-type="number" data-value="1">1</button>
+      <button type="button" data-type="number" data-value="2">2</button>
+      <button type="button" data-type="number" data-value="3">3</button>
+      <button type="button" class="operator" data-type="operator" data-value="+" aria-label="Add">+</button>
+
+      <button type="button" class="span-2" data-type="number" data-value="0">0</button>
+      <button type="button" data-type="decimal" aria-label="Decimal point">.</button>
+      <button type="button" class="equals" data-type="equals" aria-label="Equals">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
